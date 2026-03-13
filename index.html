@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Aruna Kelvin Okhai — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cring"></div>
+
+<!-- HIRE MODAL -->
+<div class="modal-overlay" id="hireModal">
+  <div class="modal-box">
+    <div class="modal-header">
+      <span class="modal-title">Let's Work Together</span>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-body">
+      <p>I'm open to internships, entry-level roles, freelance projects, and collaborations. Here's how you can reach me:</p>
+      <div class="modal-options">
+        <a href="mailto:arunakelvin@email.com" class="modal-opt">
+          <span class="modal-opt-icon">✉️</span>
+          <div class="modal-opt-txt"><strong>Send an Email</strong><span>arunakelvin@email.com</span></div>
+        </a>
+        <a href="https://linkedin.com/in/arunakelvin" target="_blank" class="modal-opt">
+          <span class="modal-opt-icon">💼</span>
+          <div class="modal-opt-txt"><strong>Connect on LinkedIn</strong><span>linkedin.com/in/arunakelvin</span></div>
+        </a>
+        <a href="#contact" class="modal-opt" onclick="closeModal()">
+          <span class="modal-opt-icon">💬</span>
+          <div class="modal-opt-txt"><strong>Send a Message</strong><span>Use the contact form below</span></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="36" height="36" rx="9" fill="white"/>
+        <path d="M10 26L16.5 10H19.5L26 26H23L21.5 22H14.5L13 26H10ZM15.5 19.5H20.5L18 13L15.5 19.5Z" fill="#080808"/>
+      </svg>
+      <span class="nav-logo-text">Aruna K.</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#" class="nav-hire" onclick="openModal(event)"><span>Hire Me ✦</span></a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#skills" onclick="closeMobile()">Skills</a>
+  <a href="#projects" onclick="closeMobile()">Projects</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+  <a href="#" onclick="closeMobile();openModal(event)">Hire Me</a>
+</div>
+
+<main>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Final Year &middot; Graduating 2026
+      </div>
+      <h1 class="hero-name">
+        Aruna Kelvin Okhai
+        <span class="sub">Computer Science Student &amp; Multidisciplinary Builder.</span>
+      </h1>
+      <p class="hero-bio">
+        Designing interfaces, writing Python, building mobile apps, securing networks — and finding the thread that connects all of it. I build things that are thoughtful, functional, and well-crafted.
+      </p>
+      <div class="hero-chips">
+        <span class="chip">UI/UX Design</span>
+        <span class="chip">Front-End Dev</span>
+        <span class="chip">Python</span>
+        <span class="chip">Mobile Apps</span>
+        <span class="chip">Cybersecurity</span>
+        <span class="chip">Networking</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work ↓</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-photo-col reveal">
+        <div class="about-photo">
+          <!-- Replace src with your actual photo e.g. src="photo.jpg" -->
+          <img src="kelvin.webp" alt="Aruna Kelvin Okhai"/>
+        </div>
+        <div class="about-stats">
+          <div class="stat"><div class="stat-num">6+</div><div class="stat-lbl">Skill Areas</div></div>
+          <div class="stat"><div class="stat-num">10+</div><div class="stat-lbl">Projects</div></div>
+          <div class="stat"><div class="stat-num">'26</div><div class="stat-lbl">Graduating</div></div>
+        </div>
+      </div>
+      <div class="about-text reveal" style="transition-delay:0.15s">
+        <div class="section-header">
+          <p class="section-label">About Me</p>
+          <h2 class="section-title">Curious by nature, versatile by choice.</h2>
+        </div>
+        <p>I'm Aruna Kelvin Okhai, a final-year Computer Science student with a broad passion for technology. My journey through CS led me deep into many areas — from crafting clean user interfaces to setting up secure networks.</p>
+        <p>I believe the best technologists understand the full picture. Whether I'm writing Python scripts to automate workflows, designing intuitive mobile app screens, or analysing network vulnerabilities, I bring the same attention to detail and curiosity to everything I do.</p>
+        <p>I'm looking to join a team where I can contribute across the stack and keep growing in a fast-moving environment.</p>
+        <a href="#contact" class="btn btn-primary" style="margin-top:0.5rem">Let's Talk →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-label">What I Do</p>
+      <h2 class="section-title">Skills &amp; Expertise</h2>
+    </div>
+    <div class="skills-grid">
+
+      <div class="skill-cat reveal">
+        <div class="skill-cat-icon">🎨</div>
+        <div class="skill-cat-title">UI/UX Design</div>
+        <div class="skill-items">
+          <div class="skill-item"><div class="skill-item-row"><span class="skill-item-name">Figma</span><span class="skill-item-pct">90%</span></div><div class="skill-bar"><div class="skill-bar-fill" data-w="90"></div></div></div>
+          <div class="skill-item"><div class="skill-item-row"><span class="skill-item-name">User Research</span><span class="skill-item-pct">80%</span></div><div class="skill-bar"><div class="skill-bar-fill" data-w="80"></div></div></div>
+          <div class="skill-item"><div class="skill-item-row"><span class="skill-item-name">Prototyping</span><span class="skill-item-pct">85%</span></div><div class="skill-bar"><div class="skill-bar-fill" data-w="85"></div></div></div>
+        </div>
+      </div>
+
+      <div class="skill-cat reveal" style="transition-delay:0.1s">
+        <div class="skill-cat-icon">💻</div>
+        <div class="skill-cat-title">Front-End Development</div>
+        <div class="skill-items">
+          <div class="skill-item"><div class="skill-item-row"><span class="skill-item-name">HTML / CSS</span><span class="skill-item-pct">92%</span></div><div class="skill-bar"><div class="skill-bar-fill" data-w="92"></div></div></div>
+          <div class="skill-item"><div class="skill-item-row"><span class="skill-item-name">JavaScript</span><span class="skill-item-pct">80%</span></div><div class="skill-bar"><div class="skill-bar-fill" data-w="80"></div></div></div>
+          <div class="skill-item"><div class="skill-item-row"><span class="skill-item-name">React</span><span class="skill-item-pct">72%</span></div><div class="skill-bar"><div class="skill-bar-fill" data-w="72"></div></div></div>
+        </div>
+      </div>
+
+      <div class="skill-cat reveal" style="transition-delay:0.2s">
+        <div class="skill-cat-icon">🐍</div>
+        <div class="skill-cat-title">Python</div>
+        <div class="skill-items">
+          <div class="skill-item"><div class="skill-item-row"><span class="skill-item-name">Core Python</span><span class="skill-item-pct">88%</span></div><div class="skill-bar"><div class="skill-bar-fill" data-w="88"></div></div></div>
+          <div class="skill-item"><div class="skill-item-row"><span class="skill-item-name">Automation</span><span class="skill-item-pct">82%</span></div><div class="skill-bar"><div class="skill-bar-fill" data-w="82"></div></div></div>
+          <div class="skill-item"><div class="skill-item-row"><span class="skill-item-name">Data Analysis</span><span class="skill-item-pct">70%</span></div><div class="skill-bar"><div class="skill-bar-fill" data-w="70"></div></div></div>
+        </div>
+      </div>
+
+      <div class="skill-cat reveal" style="transition-delay:0.4s">
+        <div class="skill-cat-icon">🔒</div>
+        <div class="skill-cat-title">Cybersecurity</div>
+        <div class="skill-items">
+          <div class="skill-item"><div class="skill-item-row"><span class="skill-item-name">Network Security</span><span class="skill-item-pct">75%</span></div><div class="skill-bar"><div class="skill-bar-fill" data-w="75"></div></div></div>
+          <div class="skill-item"><div class="skill-item-row"><span class="skill-item-name">Pen Testing</span><span class="skill-item-pct">65%</span></div><div class="skill-bar"><div class="skill-bar-fill" data-w="65"></div></div></div>
+        </div>
+      </div>
+
+      <div class="skill-cat reveal" style="transition-delay:0.5s">
+        <div class="skill-cat-icon">🌐</div>
+        <div class="skill-cat-title">Networking</div>
+        <div class="skill-items">
+          <div class="skill-item"><div class="skill-item-row"><span class="skill-item-name">TCP/IP &amp; Protocols</span><span class="skill-item-pct">85%</span></div><div class="skill-bar"><div class="skill-bar-fill" data-w="85"></div></div></div>
+          <div class="skill-item"><div class="skill-item-row"><span class="skill-item-name">Cisco Packet Tracer</span><span class="skill-item-pct">78%</span></div><div class="skill-bar"><div class="skill-bar-fill" data-w="78"></div></div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-label">My Work</p>
+      <h2 class="section-title">Featured Projects</h2>
+    </div>
+    <div class="proj-filter">
+      <button class="flt active" data-f="all">All</button>
+      <button class="flt" data-f="design">Design</button>
+      <button class="flt" data-f="frontend">Front-End</button>
+      <button class="flt" data-f="python">Python</button>
+      <button class="flt" data-f="security">Security</button>
+      <button class="flt" data-f="networking">Networking</button>
+    </div>
+    <div class="proj-grid">
+
+      <div class="proj-card reveal" data-c="security python" style="transition-delay:0.1s">
+        <div class="proj-top"><div class="proj-icon">🔍</div><span class="proj-cat">Cybersecurity · Python</span></div>
+        <h3>Network Packet Analyser</h3>
+        <p>A Python tool to capture, inspect, and log network packets on a local interface — useful for detecting anomalies and learning protocol behaviour.</p>
+        <div class="proj-stack"><span class="stag">Python</span><span class="stag">Scapy</span><span class="stag">Wireshark</span></div>
+      </div>
+
+      <div class="proj-card reveal" data-c="frontend" style="transition-delay:0.2s">
+        <div class="proj-top"><div class="proj-icon">🎓</div><span class="proj-cat">Front-End</span></div>
+        <h3>Student Portal UI</h3>
+        <p>A fully responsive front-end for a university student portal — course management, timetable view, and results dashboard.</p>
+        <div class="proj-stack"><span class="stag">React</span><span class="stag">CSS Modules</span><span class="stag">REST API</span></div>
+      </div>
+
+      <div class="proj-card reveal" data-c="networking" style="transition-delay:0.3s">
+        <div class="proj-top"><div class="proj-icon">🏫</div><span class="proj-cat">Networking</span></div>
+        <h3>Campus LAN Simulation</h3>
+        <p>Designed and simulated a multi-floor campus network topology with VLANs, routing, and DHCP configuration using Cisco Packet Tracer.</p>
+        <div class="proj-stack"><span class="stag">Cisco PT</span><span class="stag">VLAN</span><span class="stag">OSPF</span></div>
+      </div>
+
+      <div class="proj-card reveal" data-c="python" style="transition-delay:0.4s">
+        <div class="proj-top"><div class="proj-icon">⚙️</div><span class="proj-cat">Python · Automation</span></div>
+        <h3>File Organiser Script</h3>
+        <p>A Python script that monitors a downloads folder and automatically sorts files into categorised subdirectories by type and date.</p>
+        <div class="proj-stack"><span class="stag">Python</span><span class="stag">OS module</span><span class="stag">Watchdog</span></div>
+      </div>
+
+      <div class="proj-card reveal" data-c="design" style="transition-delay:0.5s">
+        <div class="proj-top"><div class="proj-icon">🛒</div><span class="proj-cat">UI/UX Design</span></div>
+        <h3>E-Commerce Redesign</h3>
+        <p>A concept redesign of a local e-commerce platform, improving checkout flow and mobile usability with a refined visual system.</p>
+        <div class="proj-stack"><span class="stag">Figma</span><span class="stag">Prototyping</span><span class="stag">User Research</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-label">Contact</p>
+      <h2 class="section-title">Let's Build Something Together</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <p class="contact-desc">Whether you have a project in mind, want to collaborate, or just want to say hi — I'm always open. I'm currently looking for opportunities where I can apply my broad skill set and keep growing.</p>
+        <div class="contact-links">
+          <a href="https://github.com/Moon-Dustt" target="_blank" class="clink">
+            <div class="clink-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></div>
+            <div class="clink-info"><strong>GitHub</strong><span>github.com/arunakelvin</span></div>
+            <span class="clink-arrow">→</span>
+          </a>
+          <a href="www.linkedin.com/in/kelvin-aruna-okhaiii" target="_blank" class="clink">
+            <div class="clink-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div>
+            <div class="clink-info"><strong>LinkedIn</strong><span>linkedin.com/in/arunakelvin</span></div>
+            <span class="clink-arrow">→</span>
+          </a>
+          <a href="mailto:okhaiiiiiiii@gmail.com" class="clink">
+            <div class="clink-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div class="clink-info"><strong>Email</strong><span>okhaiiiiiiii@gmail.com</span></div>
+            <span class="clink-arrow">→</span>
+          </a>
+        </div>
+      </div>
+      <div class="form-card reveal" style="transition-delay:0.2s">
+        <p class="form-heading">Send a Message</p>
+        <div id="cForm">
+          <div class="fg"><label>Your Name</label><input type="text" id="fn" placeholder="e.g. Chidi Okeke"/></div>
+          <div class="fg"><label>Email Address</label><input type="email" id="fe" placeholder="you@example.com"/></div>
+          <div class="fg"><label>Message</label><textarea id="fm" placeholder="What's on your mind?"></textarea></div>
+          <button class="form-btn" onclick="sendMsg()">Send Message ↗</button>
+        </div>
+        <div class="form-ok" id="fOk">
+          <div class="ck">✅</div>
+          <p>Thanks! I'll get back to you soon.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <span class="footer-name">Aruna Kelvin Okhai</span>
+  <p>© 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
